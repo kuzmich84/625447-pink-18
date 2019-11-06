@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Кучуков](https://up.htmlacademy.ru/adaptive/18/user/625447).
-* Наставник: `Неизвестно`.
+* Наставник: [Кексобот].
 
 ---
 
