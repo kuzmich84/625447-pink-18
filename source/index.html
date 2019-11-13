@@ -3,6 +3,34 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/style.css">
+  <!-- Pixel Glass -->
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      /* По умолчанию показывается мобильный макет */
+      background-image: url("pixelPerfect/img/pink-index-mobile.jpg");
+    }
+
+    /* Планшет */
+    @media (min-width: 760px) {
+      HTML {
+        /* Планшетный макет */
+        background-image: url("pixelPerfect/img/pink-form-mobile.jpg");
+      }
+    }
+
+    /* Десктоп */
+    /*@media ( min-width: 960px ) {*/
+    /*  HTML {*/
+    /*    !* Десктопный макет *!*/
+    /*    background-image: url("img/960.png");*/
+    /*  }*/
+    /*}*/
+  </style>
+  <link href="pixelPerfect/pixel-glass/styles.css" rel="stylesheet">
+  <script src="pixelPerfect/pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
   <title>HTML Academy: Пинк</title>
 </head>
 <body>
@@ -31,26 +59,26 @@
 </header>
 <main class="page-main">
 
-    <section class="market">
-      <a class="market__link" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
-      <ul class="market__list system-list">
-        <li class="system-list__item">
-          <a class="system-list__link system-list__link--apple" href="https://www.apple.com/ru/ios/app-store/" aria-label="Посетить Apple Маркет">
-            <img src="https://via.placeholder.com/47x56" width="47" height="56" alt="Apple Маркет">
-          </a>
-        </li>
-        <li class="system-list__item">
-          <a class="system-list__link system-list__link--google" href="https://play.google.com/store" aria-label="Посетить Google Play">
-            <img src="https://via.placeholder.com/43x47" width="43" height="47" alt="Google Play">
-          </a>
-        </li>
-        <li class="system-list__item">
-          <a class="system-list__link system-list__link--microsoft" href="https://www.microsoft.com/ru-ru/store/b/home" aria-label="Посетить Microsoft Store">
-            <img src="https://via.placeholder.com/44x41" width="44" height="41" alt="Microsoft Store">
-          </a>
-        </li>
-      </ul>
-    </section>
+  <section class="market">
+    <a class="market__link" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
+    <ul class="market__list system-list">
+      <li class="system-list__item">
+        <a class="system-list__link system-list__link--apple" href="https://www.apple.com/ru/ios/app-store/" aria-label="Посетить Apple Маркет">
+          <img src="https://via.placeholder.com/47x56" width="47" height="56" alt="Apple Маркет">
+        </a>
+      </li>
+      <li class="system-list__item">
+        <a class="system-list__link system-list__link--google" href="https://play.google.com/store" aria-label="Посетить Google Play">
+          <img src="https://via.placeholder.com/43x47" width="43" height="47" alt="Google Play">
+        </a>
+      </li>
+      <li class="system-list__item">
+        <a class="system-list__link system-list__link--microsoft" href="https://www.microsoft.com/ru-ru/store/b/home" aria-label="Посетить Microsoft Store">
+          <img src="https://via.placeholder.com/44x41" width="44" height="41" alt="Microsoft Store">
+        </a>
+      </li>
+    </ul>
+  </section>
   <section class="advantages">
     <h2 class="visually-hidden">Наши преимущества</h2>
     <p class="advantages__subtitle">Устали от серости мегаполиса?</p>
@@ -76,7 +104,8 @@
     <ul class="reviews__list review-slider">
       <li class="review-slider__item review-slider__item--current">
         <h3 class="review-slider__title">Николай Петров</h3>
-        <p class="review-slider__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        <p class="review-slider__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к
+          выложенной фотографии!»</p>
       </li>
     </ul>
     <p class="reviews__toggles slider-toggle">

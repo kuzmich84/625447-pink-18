@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
   <title>HTML Academy: Пинк</title>
 </head>
 <body>
@@ -26,16 +26,69 @@
     </ul>
     <button class="main-nav__toggle" type="button">Переключатель меню</button>
   </nav>
-  qqq
   <h2 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
 </header>
 <main class="page-main">
-  <section class="form">
-    <p class="form__subtitle">Поделитесь своей историей и получите шанс выиграть ценный приз</p>
-    <form action="#" method="get">
-      <p class=""></p>
-
-
+  <section class="form-main">
+    <p class="form-main__subtitle">Поделитесь своей историей и получите шанс выиграть ценный приз</p>
+    <form class="form" action="#" method="get">
+      <fieldset class="form__fieldset">
+        <legend class="visually-hidden">ФИО</legend>
+        <p class="form__label"><label for="surname">Фамилия:</label></p>
+        <input class="form__input" id="surname" name="surname" type="text" placeholder="Укажите фамилию *" required>
+        <p class="form__label"><label for="name">Имя:</label></p>
+        <input class="form__input" id="name" name="name" type="text" placeholder="Введите ваше имя *">
+        <p class="form__label"><label for="patronymic">Отчество:</label></p>
+        <input class="form__input" id="patronymic" name="patronymic" type="text" placeholder="Ну о отчество тоже">
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+        <p class="form__label"><label>
+          <input class="form__checkbox" type="checkbox" name="selfi" checked> Сделал селфи с акулой
+        </label></p>
+        <p class="form__label"><label>
+          <input class="form__checkbox" type="checkbox" name="sunburn" checked> Обгорел на пляже
+        </label></p>
+        <p class="form__label"><label>
+          <input class="form__checkbox" type="checkbox" name="chuck"> Видел Чака Норриса
+        </label></p>
+        <p class="form__label"><label>
+          <input class="form__checkbox" type="checkbox" name="souvenir">Накупил сувениров
+        </label></p>
+        <p class="form__label"><label>
+          <input class="form__checkbox" type="checkbox" name="keep" checked> Удержал башню
+        </label></p>
+        <p class="form__label"><label>
+          <input class="form__checkbox" type="checkbox" name="smash"> Разгромил отель
+        </label></p>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="visually-hidden">Контактные данные</legend>
+        <p class="form__label"><label for="phone">Номер телефона</label></p>
+        <input class="form__input" id="phone" name="phone" type="text" placeholder="Номер, пожалуйста">
+        <p class="form__label"><label for="mail">Номер телефона</label></p>
+        <input class="form__input" id="mail" name="mail" type="text" placeholder="Введите почту *">
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">С какими приложениями путешествовали?</legend>
+        <p class="form__label"><label>
+          <input class="form__radio" type="radio" name="app" checked> Pink для iOS
+        </label></p>
+        <p class="form__label"><label>
+          <input class="form__radio" type="radio" name="app"> Pink на Android
+        </label></p>
+        <p class="form__label"><label>
+          <input class="form__radio" type="radio" name="app"> Windows Phone
+        </label></p>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Опишите свои эмоции</legend>
+        <p class="form__label"><label>
+          <textarea name="emotion" id="emotion" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </label></p>
+      </fieldset>
+       <button class="form__button" type="submit">Отправить форму</button>
+      <p class="form__text">* — обязательные поля</p>
     </form>
   </section>
 </main>
@@ -44,20 +97,24 @@
   <div class="page-footer__social social">
     <ul class="social__list">
       <li class="social__item"><a class="social__link social__link--twitter" href="#" aria-label="Мы в Твитере">
-        <img class="social__icon social__icon--twitter" src="https://via.placeholder.com/46x46" width="46" height="46" alt="Иконка твитера">
+        <img class="social__icon social__icon--twitter" src="https://via.placeholder.com/46x46" width="46" height="46"
+             alt="Иконка твитера">
       </a></li>
       <li class="social__item"><a class="social__link social__link--facebook" href="#" aria-label="Мы в Фейсбуке">
-        <img class="social__icon social__icon--facebook" src="https://via.placeholder.com/46x46" width="46" height="46" alt="Иконка фейсбука"></a>
+        <img class="social__icon social__icon--facebook" src="https://via.placeholder.com/46x46" width="46" height="46"
+             alt="Иконка фейсбука"></a>
       </li>
       <li class="social__item"><a class="social__link social__link--youtube" href="#" aria-label="Мы в Ютубе">
-        <img class="social__icon social__icon--youtube" src="https://via.placeholder.com/46x46" width="46" height="46" alt="Иконка ютуба">
+        <img class="social__icon social__icon--youtube" src="https://via.placeholder.com/46x46" width="46" height="46"
+             alt="Иконка ютуба">
       </a></li>
     </ul>
   </div>
   <div class="page-footer__copyright copyright">
     <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
       <p class="copyright__text">Разработано</p>
-      <img class="copyright__image" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Лого разработчика"></a>
+      <img class="copyright__image" src="https://via.placeholder.com/27x34" width="27" height="34"
+           alt="Логотип разработчика"></a>
   </div>
 </footer>
 
