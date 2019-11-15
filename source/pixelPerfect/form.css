@@ -1,0 +1,26 @@
+HTML {
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  /* По умолчанию мобильный макет */
+  background-image: url("img/pognali-form-mobile.jpg");
+}
+/* Планшет */
+@media (min-width: 768px) {
+  HTML {
+    /* Планшетный макет */
+    background-image: url("img/pognali-form-tablet.jpg");
+    /*background-image: url("img/pognali-form-tablet-popup.jpg");*/
+  }
+}
+/* Десктоп */
+@media (min-width: 1440px) {
+  HTML {
+    /* Десктопный макет */
+    background-image: url("img/pognali-form-desktop.jpg");
+    /*background-image: url("img/pognali-form-desktop--choose-country.jpg");*/
+  }
+}
+
+BODY {
+  opacity: 0.5;
+}

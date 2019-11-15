@@ -1,0 +1,24 @@
+HTML {
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  /* По умолчанию мобильный макет */
+  background-image: url("img/pognali-index-mobile.jpg");
+}
+/* Планшет */
+@media (min-width: 768px) {
+  HTML {
+    /* Планшетный макет */
+    background-image: url("img/pognali-index-tablet.jpg");
+  }
+}
+/* Десктоп */
+@media (min-width: 1440px) {
+  HTML {
+    /* Десктопный макет */
+    background-image: url("img/pognali-index-desktop.jpg");
+  }
+}
+
+BODY {
+  opacity: 0.5;
+}

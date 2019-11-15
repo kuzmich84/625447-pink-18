@@ -2,58 +2,93 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Pixel Glass -->
+  <style>
+    html {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      /* По умолчанию показывается мобильный макет */
+      background-image: url("pixelPerfect/img/pink-index-mobile.jpg");
+    }
+
+    /* Планшет */
+    @media (min-width: 760px) {
+      html {
+        /* Планшетный макет */
+        background-image: url("pixelPerfect/img/pink-form-mobile.jpg");
+      }
+    }
+
+    /* Десктоп */
+    /*@media ( min-width: 960px ) {*/
+    /*  HTML {*/
+    /*    !* Десктопный макет *!*/
+    /*    background-image: url("img/960.png");*/
+    /*  }*/
+    /*}*/
+  </style>
+  <link href="pixelPerfect/pixel-glass/styles.css" rel="stylesheet">
+  <script src="pixelPerfect/pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
   <title>HTML Academy: Пинк</title>
 </head>
-<body>
+<body class="main-body">
 <header class="page-header">
   <nav class="main-nav">
     <a class="main-nav__logo">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/75x22" width="75" height="22" alt="Логотип">
+      <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип">
     </a>
+    <button class="main-nav__toggle" type="button">Переключатель меню <svg  class="main-nav__toggle-icon"  version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24" height="24" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+  <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"></path>
+</svg>
+    </button>
     <ul class="main-nav__list site-list">
       <li class="site-list__item">
-        <a href="index.html">ГЛАВНАЯ</a>
+        <a class="site-list__link" href="index.html">ГЛАВНАЯ</a>
       </li>
       <li class="site-list__item">
-        <a href="photo.html">ФОТОГРАФИИ</a>
+        <a class="site-list__link" href="photo.html">ФОТОГРАФИИ</a>
       </li>
       <li class="site-list__item">
-        <a href="#">КОНКУРС</a>
+        <a class="site-list__link" href="#">КОНКУРС</a>
       </li>
       <li class="site-list__item">
-        <a href="#">HTML ACADEMY</a>
+        <a class="site-list__link" href="#">HTML ACADEMY</a>
       </li>
     </ul>
-    <button class="main-nav__toggle" type="button">Переключатель меню</button>
   </nav>
   <h2 class="page-header__title">Взгляните на жизнь иначе!</h2>
 </header>
 <main class="page-main">
-
-    <section class="market">
-      <a class="market__link" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
-      <ul class="market__list system-list">
-        <li class="system-list__item">
-          <a class="system-list__link system-list__link--apple" href="https://www.apple.com/ru/ios/app-store/" aria-label="Посетить Apple Маркет">
-            <img src="https://via.placeholder.com/47x56" width="47" height="56" alt="Apple Маркет">
-          </a>
-        </li>
-        <li class="system-list__item">
-          <a class="system-list__link system-list__link--google" href="https://play.google.com/store" aria-label="Посетить Google Play">
-            <img src="https://via.placeholder.com/43x47" width="43" height="47" alt="Google Play">
-          </a>
-        </li>
-        <li class="system-list__item">
-          <a class="system-list__link system-list__link--microsoft" href="https://www.microsoft.com/ru-ru/store/b/home" aria-label="Посетить Microsoft Store">
-            <img src="https://via.placeholder.com/44x41" width="44" height="41" alt="Microsoft Store">
-          </a>
-        </li>
-      </ul>
-    </section>
+  <section class="market">
+    <a class="market__link" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
+    <ul class="market__list system-list">
+      <li class="system-list__item">
+        <a class="system-list__link system-list__link--apple" href="https://www.apple.com/ru/ios/app-store/" aria-label="Посетить Apple Маркет">
+          <img src="img/logo-apple.svg" width="47" height="56" alt="Apple Маркет">
+        </a>
+      </li>
+      <li class="system-list__item">
+        <a class="system-list__link system-list__link--google" href="https://play.google.com/store" aria-label="Посетить Google Play">
+          <img src="img/logo-android.svg" width="43" height="47" alt="Google Play">
+        </a>
+      </li>
+      <li class="system-list__item">
+        <a class="system-list__link system-list__link--microsoft" href="https://www.microsoft.com/ru-ru/store/b/home" aria-label="Посетить Microsoft Store">
+          <img src="img/logo-microsoft.svg" width="44" height="41" alt="Microsoft Store">
+        </a>
+      </li>
+    </ul>
+    <p class="market__slogan">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+  </section>
   <section class="advantages">
     <h2 class="visually-hidden">Наши преимущества</h2>
+    <div class="advantages__subtitle-wrapper">
     <p class="advantages__subtitle">Устали от серости мегаполиса?</p>
     <p class="advantages__subtitle">Нам есть, что вам предложить!</p>
+    </div>
+    <div class="advantages__list-wrapper">
     <ul class="advantages__list functions-list">
       <li class="functions-list__item">
         <h3 class="functions-list__title">Поднимает настроение</h3>
@@ -68,14 +103,16 @@
         <p class="functions-list__content">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
       </li>
     </ul>
-    <img class="advantages__image" src="https://via.placeholder.com/157x320" width="157" height="320" alt="">
+    </div>
+    <img class="advantages__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="">
   </section>
   <section class="reviews">
     <h2 class="visually-hidden">Отзывы о нас</h2>
     <ul class="reviews__list review-slider">
       <li class="review-slider__item review-slider__item--current">
         <h3 class="review-slider__title">Николай Петров</h3>
-        <p class="review-slider__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        <p class="review-slider__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к
+          выложенной фотографии!»</p>
       </li>
     </ul>
     <p class="reviews__toggles slider-toggle">
@@ -89,19 +126,24 @@
     <ul class="price__list price-slider">
       <li class="price-slider__item">
         <ul class="price__list packet-list">
+          <div class="price__packet-title">
           <h3 class="packet-list__title">Стандарт</h3>
           <p class="packet-list__value">3,99 USD</p>
+          </div>
           <li class="packet-list__item">
-            <p class="packet-list__desc">РОЗОВЫЙ ФИЛЬТР</p>
+            <p class="packet-list__desc">РОЗОВЫЙ ФИЛЬТР
             <img class="packet-list__icon packet-list__icon--yes" src="https://via.placeholder.com/31x21" alt="Да">
+            </p>
           </li>
           <li class="packet-list__item">
-            <p class="packet-list__desc">СМАЙЛИКИ</p>
+            <p class="packet-list__desc">СМАЙЛИКИ
             <img class="packet-list__icon packet-list__icon--yes" src="https://via.placeholder.com/31x21" alt="Да">
+            </p>
           </li>
           <li class="packet-list__item">
-            <p class="packet-list__desc">КОММЕНТАРИИ</p>
+            <p class="packet-list__desc">КОММЕНТАРИИ
             <img class="packet-list__icon packet-list__icon--no" src="https://via.placeholder.com/31x21" alt="Нет">
+            </p>
           </li>
         </ul>
         <p class="price__toggles slider-toggle">

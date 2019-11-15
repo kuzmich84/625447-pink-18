@@ -1,41 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Пинк</title>
 </head>
 <body>
 <header class="page-header">
   <nav class="main-nav">
     <a class="main-nav__logo">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/75x22" width="75" height="22" alt="Логотип">
+      <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип">
     </a>
+    <button class="main-nav__toggle" type="button">Переключатель меню <svg  class="main-nav__toggle-icon"  version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24" height="24" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+  <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"></path>
+</svg>
+    </button>
     <ul class="main-nav__list site-list">
       <li class="site-list__item">
-        <a href="index.html">ГЛАВНАЯ</a>
+        <a class="site-list__link" href="index.html">ГЛАВНАЯ</a>
       </li>
       <li class="site-list__item">
-        <a href="photo.html">ФОТОГРАФИИ</a>
+        <a class="site-list__link" href="photo.html">ФОТОГРАФИИ</a>
       </li>
       <li class="site-list__item">
-        <a href="#">КОНКУРС</a>
+        <a class="site-list__link" href="#">КОНКУРС</a>
       </li>
       <li class="site-list__item">
-        <a href="#">HTML ACADEMY</a>
+        <a class="site-list__link" href="#">HTML ACADEMY</a>
       </li>
     </ul>
-    <button class="main-nav__toggle" type="button">Переключатель меню</button>
   </nav>
-  qqq
   <h2 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
 </header>
 <main class="page-main">
-  <section class="form">
-    <p class="form__subtitle">Поделитесь своей историей и получите шанс выиграть ценный приз</p>
-    <form action="#" method="get">
-      <p class=""></p>
-
-
+  <section class="form-main">
+    <p class="form-main__subtitle">Поделитесь своей историей и получите шанс выиграть ценный приз</p>
+    <form class="form" action="#" method="get">
+      <fieldset class="form__fieldset">
+        <legend class="visually-hidden">ФИО</legend>
+        <p class="form__label"><label for="surname">Фамилия:</label></p>
+        <input class="form__input" id="surname" name="surname" type="text" placeholder="Укажите фамилию *" required>
+        <p class="form__label"><label for="name">Имя:</label></p>
+        <input class="form__input" id="name" name="name" type="text" placeholder="Введите ваше имя *">
+        <p class="form__label"><label for="patronymic">Отчество:</label></p>
+        <input class="form__input" id="patronymic" name="patronymic" type="text" placeholder="Ну о отчество тоже">
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+        <p class="form__label"><label>
+          <input class="form__checkbox" type="checkbox" name="selfi" checked> Сделал селфи с акулой
+        </label></p>
+        <p class="form__label"><label>
+          <input class="form__checkbox" type="checkbox" name="sunburn" checked> Обгорел на пляже
+        </label></p>
+        <p class="form__label"><label>
+          <input class="form__checkbox" type="checkbox" name="chuck"> Видел Чака Норриса
+        </label></p>
+        <p class="form__label"><label>
+          <input class="form__checkbox" type="checkbox" name="souvenir">Накупил сувениров
+        </label></p>
+        <p class="form__label"><label>
+          <input class="form__checkbox" type="checkbox" name="keep" checked> Удержал башню
+        </label></p>
+        <p class="form__label"><label>
+          <input class="form__checkbox" type="checkbox" name="smash"> Разгромил отель
+        </label></p>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="visually-hidden">Контактные данные</legend>
+        <p class="form__label"><label for="phone">Номер телефона</label></p>
+        <input class="form__input" id="phone" name="phone" type="text" placeholder="Номер, пожалуйста">
+        <p class="form__label"><label for="mail">Номер телефона</label></p>
+        <input class="form__input" id="mail" name="mail" type="text" placeholder="Введите почту *">
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">С какими приложениями путешествовали?</legend>
+        <p class="form__label"><label>
+          <input class="form__radio" type="radio" name="app" checked> Pink для iOS
+        </label></p>
+        <p class="form__label"><label>
+          <input class="form__radio" type="radio" name="app"> Pink на Android
+        </label></p>
+        <p class="form__label"><label>
+          <input class="form__radio" type="radio" name="app"> Windows Phone
+        </label></p>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Опишите свои эмоции</legend>
+        <p class="form__label"><label>
+          <textarea name="emotion" id="emotion" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </label></p>
+      </fieldset>
+       <button class="form__button" type="submit">Отправить форму</button>
+      <p class="form__text">* — обязательные поля</p>
     </form>
   </section>
 </main>
@@ -44,20 +101,24 @@
   <div class="page-footer__social social">
     <ul class="social__list">
       <li class="social__item"><a class="social__link social__link--twitter" href="#" aria-label="Мы в Твитере">
-        <img class="social__icon social__icon--twitter" src="https://via.placeholder.com/46x46" width="46" height="46" alt="Иконка твитера">
+        <img class="social__icon social__icon--twitter" src="https://via.placeholder.com/46x46" width="46" height="46"
+             alt="Иконка твитера">
       </a></li>
       <li class="social__item"><a class="social__link social__link--facebook" href="#" aria-label="Мы в Фейсбуке">
-        <img class="social__icon social__icon--facebook" src="https://via.placeholder.com/46x46" width="46" height="46" alt="Иконка фейсбука"></a>
+        <img class="social__icon social__icon--facebook" src="https://via.placeholder.com/46x46" width="46" height="46"
+             alt="Иконка фейсбука"></a>
       </li>
       <li class="social__item"><a class="social__link social__link--youtube" href="#" aria-label="Мы в Ютубе">
-        <img class="social__icon social__icon--youtube" src="https://via.placeholder.com/46x46" width="46" height="46" alt="Иконка ютуба">
+        <img class="social__icon social__icon--youtube" src="https://via.placeholder.com/46x46" width="46" height="46"
+             alt="Иконка ютуба">
       </a></li>
     </ul>
   </div>
   <div class="page-footer__copyright copyright">
     <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
       <p class="copyright__text">Разработано</p>
-      <img class="copyright__image" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Лого разработчика"></a>
+      <img class="copyright__image" src="https://via.placeholder.com/27x34" width="27" height="34"
+           alt="Логотип разработчика"></a>
   </div>
 </footer>
 
