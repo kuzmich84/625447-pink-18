@@ -1,11 +1,36 @@
+.price {
+  z-index: 100;
+}
+
 .price__list {
   .reset-ul();
 }
 
 .price__packet-title {
   background-color: #283645;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 50px solid #d22856;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    height: 0;
+    width: 100px;
+    transform: rotate(-45deg);
+  }
 }
+
 
 .price__toggles {
   margin: 0;
+  padding-bottom: 47px;
+}
+
+.price__toggles-wrapper {
+  background-color: #f2f2f2;
+  z-index: 100;
 }

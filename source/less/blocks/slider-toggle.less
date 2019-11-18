@@ -1,0 +1,29 @@
+.slider-toggle {
+  display: flex;
+  justify-content: center;
+}
+
+.slider-toggle__btn {
+  background: none;
+  border: none;
+  font-size: 0;
+  margin-right: 5px;
+}
+
+.slider-toggle__btn::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: rgba(40, 54, 69, 0.3);
+  border-radius: 50%;
+}
+
+.slider-toggle__btn--active::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border: solid 3px rgba(40, 54, 69, 1);
+  background-color: @white;
+}
