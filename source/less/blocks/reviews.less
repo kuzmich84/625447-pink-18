@@ -10,7 +10,7 @@
 .reviews::after {
   background: inherit;
   bottom: 0;
-  content: '';
+  content: "";
   display: block;
   height: 100%;
   left: 0;
@@ -47,4 +47,10 @@
 
 .reviews__toggles {
   padding-bottom: 27px;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews {
+    z-index: 30;
+  }
 }

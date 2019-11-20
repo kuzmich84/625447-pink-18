@@ -1,5 +1,6 @@
 .functions-list {
   .reset-ul();
+  margin-bottom: 20px;
 }
 
 .functions-list__title {
@@ -20,4 +21,30 @@
   padding: 0 20px;
   margin-top: 12px;
   margin-bottom: 31px;
+}
+
+.function-list__br {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .functions-list {
+    margin-top: 78px;
+  }
+
+  .functions-list__title {
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .functions-list__content {
+    text-align: left;
+    margin-bottom: 35px;
+    padding-right: 0;
+  }
+
+  .function-list__br {
+    display: inline;
+  }
+
 }
