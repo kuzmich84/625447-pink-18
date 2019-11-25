@@ -6,6 +6,10 @@
   .feature {
     background-color: @white;
     margin-top: -43px;
+    display: block;
+  }
+
+  .feature__content {
     display: flex;
     padding-top: 60px;
     padding-left: 20px;
@@ -70,5 +74,70 @@
     color: #d22856;
     text-decoration: underline;
     cursor: pointer;
+  }
+
+  .feature__excerpt-what-br {
+    display: none;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .feature {
+    background-color: #f2f2f2;
+  }
+
+  .feature__icon {
+    width: 300px;
+    height: 353px;
+  }
+
+  .feature__content {
+    padding: 0 130px;
+    padding-bottom: 59px;
+  }
+
+  .feature__title-br {
+    display: none;
+  }
+
+  .feature__image {
+    margin-right: 66px;
+
+    &::before {
+      top: 98px;
+      left: 80px;
+      font-size: 120px;
+      line-height: 186.84px;
+    }
+
+    &::after {
+      width: 223px;
+      height: 223px;
+      top: 72px;
+      left: 23px;
+    }
+  }
+
+  .feature__excerpt {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+
+  .feature__text {
+    margin-top: 96px;
+  }
+
+  .feature__title {
+    margin-bottom: 20px;
+  }
+
+  .feature__excerpt-br {
+    display: none;
+  }
+
+  .feature__excerpt-what-br {
+    display: inline;
   }
 }

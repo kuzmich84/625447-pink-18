@@ -18,7 +18,7 @@
   color: #d22856;
   text-align: center;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
   margin-top: 6px;
   line-height: 28px;
 }
@@ -34,9 +34,33 @@
 
   .contact-types .contact-types__item:last-child {
     margin-left: 20px;
+    margin-bottom: -29px;
   }
 
   .contact-types__title {
     margin-bottom: 8px;
+  }
+
+  .contact-types {
+    margin-top: 16px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact-types {
+    padding-top: 25px;
+  }
+
+  .contact-types__item {
+    width: 311px;
+    margin-right: 10px;
+  }
+
+  .contact-types .contact-types__item:last-child {
+    margin-left: 0;
+  }
+
+  .contact-types__title {
+    margin-bottom: 26px;
   }
 }
