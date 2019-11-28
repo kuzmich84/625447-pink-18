@@ -11,8 +11,26 @@
 .photos__list {
   .reset-ul();
   margin-bottom: 44px;
+  display: flex;
+  flex-direction: column;
 }
 
 .photos {
   margin-bottom: 42px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .photos__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .photos__subtitle {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 85px 50px 58px;
+  }
+
+
 }

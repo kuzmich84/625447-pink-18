@@ -6,7 +6,8 @@
 }
 
 .photo-header .page-header__title {
-  padding-top: 50px;
+  padding-top: 27px;
+  padding-bottom: 81px;
 }
 
 .main-nav--opened .photo-header__title-wrapper {
@@ -14,10 +15,33 @@
   background-position: 0 -67px;
   background-repeat: no-repeat;
   background-color: #1d2631;
+  background-size: cover;
 }
 
+@media (min-width: @tablet-width) {
+  .photo-header .page-header__title {
+    font-size: 50px;
+    line-height: 59px;
+    text-align: center;
+    padding-top: 71px;
+    width: 565px;
+    padding-bottom: 140px;
+  }
 
-.photo-header .page-header__title {
-  padding-top: 27px;
-  padding-bottom: 81px;
+  .main-nav--opened .photo-header__title-wrapper {
+    background-image: url(../img/bg-back-tablet@1x.jpg);
+    background-position: -271px -111px;
+    background-repeat: no-repeat;
+    background-color: #1d2631;
+    background-size: 182%;
+  }
+
+  .photo-header {
+    background-image: url(../img/bg-back-tablet@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: -271px 0;
+    background-color: #1d2631;
+    background-size: 182%;
+  }
+
 }
