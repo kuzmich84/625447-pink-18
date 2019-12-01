@@ -1,16 +1,11 @@
 .user-photos__text {
   padding: 0 18px;
   background-color: #f2f2f2;
-  margin: 0 20px;
   margin-top: -5px;
   padding-top: 19px;
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
-}
-
-.user-photos__image {
-  padding: 0 20px;
 }
 
 .user-photos__image--panorama {
@@ -56,11 +51,11 @@
   margin-top: auto;
 }
 
-.user-photos__like path {
+.user-photos__icon path {
   fill: #d22856;
 }
 
-.user-photos__like svg {
+.user-photos__icon {
   margin-right: 18px;
 }
 
@@ -72,47 +67,104 @@
   margin-bottom: 20px;
 }
 
-.user-photos__slogan {
-  font-family: "OpenSans", "Arial", sans-serif;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 30px;
-  text-align: center;
-  color: #283645;
-  margin: 0;
+.user-photos__text--panorama {
+  margin-right: 20px;
+  margin-left: 20px;
 }
-
 
 @media (min-width: @tablet-width) {
   .user-photos__image--panorama {
     height: 509px;
+    margin-bottom: 1px;
   }
 
   .user-photos__item {
     width: 300px;
     height: 455px;
-    margin-right: 20px;
-  }
-
-  .user-photos .user-photos__item:first-child {
-    width: 100%;
-    height: auto;
-    margin-bottom: 51px;
   }
 
   .user-photos__text {
-    width: 264px;
-    height: 116px;
+    width: 246px;
+    height: 110px;
     padding: 0 27px;
-    padding-top: 22px;
-  }
-
-  .user-photos__text--panorama {
-    width: 584px;
-    height: 82px;
+    padding-top: 24px;
+    padding-bottom: 21px;
   }
 
   .user-photos__like {
-    margin-top: auto;
+    display: flex;
+    padding-right: 5px;
+  }
+
+  .user-photos__count-title {
+    order: 1;
+  }
+
+  .user-photos__count-like {
+    order: 2;
+  }
+
+  .user-photos__icon {
+    order: 3;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .user-photos__desc {
+    margin-bottom: 0;
+  }
+
+  .user-photos__desc--panorama {
+    margin-bottom: 0;
+  }
+
+  .user-photos__visit-time {
+    padding-left: 1px;
+  }
+
+
+  .user-photos__text--panorama {
+    width: 566px;
+    padding-top: 24px;
+    position: relative;
+    max-height: 96px;
+    padding-bottom: 0;
+  }
+
+  .user-photos__like--panorama {
+    position: absolute;
+    right: 29px;
+    padding-right: 0;
+  }
+
+  .user-photos__icon--panorama {
+    margin-left: 17px;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .user-photos__image--panorama {
+    height: 506px;
+  }
+
+  .user-photos__text--panorama {
+    margin-left: 130px;
+    margin-right: 130px;
+    width: auto;
+    max-height: 71px;
+  }
+
+  .user-photos__item {
+    height: 555px;
+    margin-bottom: 54px;
+  }
+
+  .user-photos__like--panorama {
+    right: 31px;
+  }
+
+  .user-photos__icon--panorama {
+    margin-left: 18px;
   }
 }

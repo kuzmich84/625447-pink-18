@@ -1,0 +1,38 @@
+@media (min-width: @tablet-width) {
+  .tool-button__item {
+    margin-bottom: 43px;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 275px;
+      height: 1px;
+      background-color: rgba(0, 0, 0, 0.1);
+      position: absolute;
+      bottom: -20px;
+      left: 2px;
+    }
+  }
+
+  .tool-button .tool-button__item:last-child {
+    margin-bottom: 14px;
+
+    &::after {
+      left: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .tool-button__item {
+      margin-bottom: 24px;
+      min-height: 45px;
+    }
+
+    .tool-button__item::after {
+      left: 7px;
+      width: 410px;
+      bottom: -6px;
+    }
+  }
+}
