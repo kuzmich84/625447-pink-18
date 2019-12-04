@@ -6,6 +6,8 @@
   padding: 0 20px;
   padding-top: 20px;
   padding-bottom: 28px;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .redactor__image {
@@ -61,7 +63,7 @@
   }
 }
 
-.redactor__scale--crop:after {
+.redactor__scale--crop::after {
   right: 35px;
 }
 
@@ -76,6 +78,7 @@
     padding-top: 57px;
     display: flex;
     padding-bottom: 13px;
+    width: 620px;
   }
 
   .redactor__scale--fill,
@@ -159,14 +162,11 @@
 }
 
 @media (min-width: @desktop-width) {
-  .redactor {
-    margin: 0 130px;
-  }
-
   .redactor__content {
-    padding: 0 80px;
+    padding: 0 210px;
     padding-top: 54px;
     padding-bottom: 16px;
+    width: 940px;
   }
 
   .redactor__btn--crop svg {
