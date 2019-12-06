@@ -1,8 +1,9 @@
 .form__fieldset {
   border: none;
-  margin: 0 20px;
-  padding: 0;
+  padding: 0 20px;
   padding-bottom: 25px;
+  margin: 0 auto;
+  min-width: 280px;
 }
 
 .form__label {
@@ -220,6 +221,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .form__fieldset {
+    margin: 0 20px;
+  }
+
   .form-header .page-header__title {
     padding-bottom: 81px;
     line-height: 59px;
@@ -243,8 +248,8 @@
 
   .form__fieldset--name {
     order: 1;
-    margin-bottom: 0;
     padding-bottom: 0;
+    margin: 0;
   }
 
   .form__choose {
@@ -273,8 +278,8 @@
   }
 
   .form__textarea {
-    margin: 0 58px;
-    width: 500px;
+    margin: 0 6.4%;
+    width: 87%;
     height: 193px;
     padding-left: 18px;
   }
@@ -403,6 +408,7 @@
   .form__fieldset--name {
     width: 434px;
     margin-right: 70px;
+    padding: 0;
     padding-top: 14px;
     margin-bottom: 6px;
   }
@@ -475,8 +481,8 @@
   }
 
   .form__textarea {
-    margin: 0 58px;
-    width: 820px;
+    margin: 0 4.2%;
+    width: 91.5%;
     height: 128px;
   }
 
