@@ -1,3 +1,20 @@
+.main-nav--closed {
+  .set-font-normal();
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 176px, 50% 0;
+  background-color: #1d2631;
+  background-size: auto, 100%;
+}
+
+.main-nav--opened,
+.main-nav--nojs {
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 61.5%, 50% 49%;
+  background-color: #1d2631;
+  background-size: auto, 100%;
+}
 
 .main-nav__list {
   .reset-ul();
@@ -8,7 +25,8 @@
   display: none;
 }
 
-.main-nav--opened .main-nav__list {
+.main-nav--opened .main-nav__list,
+.main-nav--nojs .main-nav__list {
   display: block;
 }
 
@@ -49,7 +67,8 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.main-nav--opened .main-nav__top {
+.main-nav--opened .main-nav__top,
+.main-nav--nojs .main-nav__top {
   background-color: #283645;
 }
 
@@ -57,6 +76,31 @@
   cursor: pointer;
 }
 
+.main-nav--nojs .main-nav__toggle-icon {
+  display: none;
+}
+
+@media (min-width: @tablet-width ) {
+  .main-nav--closed {
+    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 182px, 0 0;
+    background-color: #1d2631;
+  }
+
+  .main-nav--opened,
+  .main-nav--nojs {
+    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 100%, 50% 100%;
+    background-color: #1d2631;
+    background-size: auto, 182%;
+  }
+
+  .main-nav__toggle-icon {
+    padding-top: 10px;
+  }
+}
 
 @media (min-width: @desktop-width) {
   .main-nav--opened .main-nav__wrapper,
@@ -97,4 +141,18 @@
     width: 940px;
     margin: 0 auto;
   }
+
+  .main-nav--closed,
+  .main-nav--opened {
+    background-image: none;
+  }
+
+  .main-nav {
+    background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 97% 209px, 50% 0;
+    background-color: #1d2631;
+    background-size: auto, 213%;
+  }
+
 }
