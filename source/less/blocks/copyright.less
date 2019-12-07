@@ -1,0 +1,30 @@
+.copyright__link {
+  display: flex;
+  align-items: center;
+}
+
+.copyright__text {
+  .set-font-normal();
+  font-size: 14px;
+  line-height: 18px;
+  color: #283645;
+  margin-right: 15px;
+}
+
+.copyright path {
+  fill: #d22856;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__link {
+    margin-top: -3px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright__text {
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 13px;
+  }
+}

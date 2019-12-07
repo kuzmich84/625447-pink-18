@@ -1,6 +1,10 @@
 .packet-list {
-  background-color: @white;
+  margin-bottom: 40px;
+  border-collapse: collapse;
+  margin-left: -255px;
+  width: 830px;
 }
+
 .packet-list__title {
   .set-font-bold();
   font-size: 18px;
@@ -8,7 +12,8 @@
   color: @white;
   text-transform: uppercase;
   text-align: center;
-  margin: 0;
+  padding-top: 12px;
+  margin: 0 0 2px;
 }
 
 .packet-list__value {
@@ -18,12 +23,129 @@
   line-height: 30px;
   text-align: center;
   margin: 0;
+  padding-bottom: 17px;
 }
 
 .packet-list__desc {
   font-size: 14px;
   line-height: 30px;
   color: #283645;
-  text-transform: uppercase;
   margin: 0;
+
+}
+
+.packet-list__item {
+  border: 2px solid #e5e5e5;
+  padding-left: 20px;
+  padding-right: 15px;
+
+
+  &::before {
+    content: attr(data-desc);
+    font-size: 14px;
+    line-height: 30px;
+    color: #283645;
+    text-transform: uppercase;
+  }
+}
+
+.packet-list__icon {
+  float: right;
+}
+
+.packet-list__item--empty,
+.packet-list__item--desc {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .price__packet-title--current {
+    width: auto;
+  }
+
+  .packet-list {
+    margin-left: auto;
+    width: auto;
+  }
+
+  .packet-list__item--empty {
+    background-color: #f2f2f2;
+    border-color: #f2f2f2;
+    display: block;
+  }
+
+
+  .packet-list__desc {
+    padding-left: 15px;
+  }
+
+  .packet-list__item {
+    min-width: 152px;
+    padding: 0;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  .packet-list__item--desc {
+    padding: 0;
+    margin: 0;
+    display: table-cell;
+  }
+
+  .packet-list__icon {
+    display: block;
+    margin: 0 auto;
+    float: none;
+  }
+
+  .packet-list__title {
+    padding-top: 9px;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 0;
+  }
+
+  .packet-list__value {
+    padding-bottom: 7px;
+    margin-top: -3px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .packet-list {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .packet-list__title {
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 13px;
+    padding-bottom: 5px;
+  }
+
+  .packet-list__value {
+    font-size: 24px;
+    line-height: 30px;
+    padding-bottom: 17px;
+  }
+
+  .packet-list__desc {
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 22px;
+  }
+
+  .packet-list__item {
+    min-width: 170px;
+  }
+
+  .packet-list__item--desc {
+    padding-top: 14px;
+    padding-bottom: 15px;
+  }
 }

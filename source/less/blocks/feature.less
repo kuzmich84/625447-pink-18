@@ -1,0 +1,146 @@
+.feature {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .feature {
+    background-color: @white;
+    margin-top: -43px;
+    display: block;
+  }
+
+  .feature__content {
+    display: flex;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-bottom: 70px;
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .feature__icon--timer path {
+    fill: #dedede;
+  }
+
+  .feature__image {
+    margin-right: 71px;
+    position: relative;
+
+    &::before {
+      content: "24";
+      position: absolute;
+      top: 75px;
+      left: 64px;
+      .set-font-bold();
+      font-size: 96px;
+      line-height: 149.47px;
+      color: #d22856;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 173px;
+      height: 173px;
+      border-radius: 50%;
+      border: 15px solid #d22856;
+      position: absolute;
+      top: 54px;
+      left: 18px;
+    }
+  }
+
+
+  .feature__title {
+    .set-font-bold();
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .feature__text {
+    margin-top: 36px;
+    margin-right: 25px;
+  }
+
+  .feature__excerpt {
+    font-size: 14px;
+    line-height: 24px;
+    color: #283645;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .feature__link {
+    color: #d22856;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .feature__excerpt-what-br {
+    display: none;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .feature {
+    background-color: #f2f2f2;
+  }
+
+  .feature__icon {
+    width: 300px;
+    height: 353px;
+  }
+
+  .feature__content {
+    padding: 0 130px;
+    padding-bottom: 59px;
+    width: 940px;
+  }
+
+  .feature__title-br {
+    display: none;
+  }
+
+  .feature__image {
+    margin-right: 66px;
+
+    &::before {
+      top: 98px;
+      left: 80px;
+      font-size: 120px;
+      line-height: 186.84px;
+    }
+
+    &::after {
+      width: 223px;
+      height: 223px;
+      top: 72px;
+      left: 23px;
+    }
+  }
+
+  .feature__excerpt {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+
+  .feature__text {
+    margin-top: 96px;
+  }
+
+  .feature__title {
+    margin-bottom: 20px;
+  }
+
+  .feature__excerpt-br {
+    display: none;
+  }
+
+  .feature__excerpt-what-br {
+    display: inline;
+  }
+}

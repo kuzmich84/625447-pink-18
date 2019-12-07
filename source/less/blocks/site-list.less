@@ -4,6 +4,9 @@
   font-size: 18px;
   line-height: 32px;
   text-transform: uppercase;
+  padding-top: 16px;
+  display: block;
+  padding-bottom: 16px;
 
   &:hover {
     color: @color-hover;
@@ -17,4 +20,22 @@
 .site-list__item {
   text-align: center;
   box-shadow: 0 1px 0 0 #000000, inset 0 2px 0 0 rgba(255, 255, 255, 0.15);
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__item {
+    box-shadow: none;
+    margin-right: 80px;
+  }
+
+  .site-list__item:last-child {
+    margin-right: 0;
+  }
+
+  .site-list__link {
+    .set-font-normal();
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: capitalize;
+  }
 }

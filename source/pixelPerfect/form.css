@@ -2,22 +2,21 @@ HTML {
   background-repeat: no-repeat;
   background-position: 50% 0;
   /* По умолчанию мобильный макет */
-  background-image: url("img/pognali-form-mobile.jpg");
+  background-image: url("img/pink-form-mobile.jpg");
 }
 /* Планшет */
-@media (min-width: 768px) {
+@media (min-width: 660px) {
   HTML {
     /* Планшетный макет */
-    background-image: url("img/pognali-form-tablet.jpg");
-    /*background-image: url("img/pognali-form-tablet-popup.jpg");*/
+    background-image: url("img/pink-form-tablet.jpg");
+
   }
 }
 /* Десктоп */
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   HTML {
     /* Десктопный макет */
-    background-image: url("img/pognali-form-desktop.jpg");
-    /*background-image: url("img/pognali-form-desktop--choose-country.jpg");*/
+    background-image: url("img/pink-form-desktop.jpg");
   }
 }
 
