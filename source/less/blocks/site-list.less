@@ -37,5 +37,24 @@
     font-size: 18px;
     line-height: 18px;
     text-transform: capitalize;
+
+    &:active {
+      color: rgba(255,255,255, 0.3);
+    }
+  }
+
+  .site-list__link--current {
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 99%;
+      height: 2px;
+      background-color: #ffffff;
+      display: block;
+      position: absolute;
+      bottom: 3px;
+      left: 2px;
+    }
   }
 }

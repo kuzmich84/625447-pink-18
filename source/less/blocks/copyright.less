@@ -11,13 +11,22 @@
   margin-right: 15px;
 }
 
-.copyright path {
+.copyright svg {
   fill: #d22856;
 }
 
 @media (min-width: @tablet-width) {
   .copyright__link {
     margin-top: -3px;
+  }
+
+  .copyright svg:hover {
+    fill: #283645;
+  }
+
+  .copyright svg:active {
+    fill: #283645;
+    opacity: 0.3;
   }
 }
 

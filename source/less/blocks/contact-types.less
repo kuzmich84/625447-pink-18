@@ -12,7 +12,8 @@
   margin-bottom: 5px;
 }
 
-.contact-types__content {
+.contact-types__content,
+.contact-types__link {
   .set-font-light();
   font-size: 24px;
   color: #d22856;
@@ -43,6 +44,17 @@
 
   .contact-types {
     margin-top: 16px;
+  }
+
+  .contact-types__link:hover {
+    color: #283645;
+    text-decoration: underline;
+  }
+
+  .contact-types__link:active {
+    color: #283645;
+    opacity: 0.3;
+    text-decoration: underline;
   }
 }
 

@@ -87,11 +87,22 @@
     height: 42px;
     margin-top: 26px;
     cursor: pointer;
+    outline: none;
   }
 
   .review-slider__arrow svg {
     fill: rgba(40, 54, 69, 0.3);
+
+
+    &:hover {
+      fill: rgba(40, 54, 69, 0.6);
+    }
+
+    &:active {
+      fill: rgba(40, 54, 69, 0.1);
+    }
   }
+
 
   .review-slider__arrow--next {
     margin-right: 11px;
