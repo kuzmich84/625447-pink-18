@@ -6,12 +6,26 @@
   background-size: 100%;
 }
 
+@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  .photo-header .main-nav--opened {
+    background-image: url(../img/bg-back-mobile@2x.jpg);
+    background-position: 0 257px;
+  }
+}
+
 .photo-header .main-nav--closed {
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position: 0 0;
   background-color: #1d2631;
   background-size: 100%;
+}
+
+@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  .photo-header .main-nav--closed {
+    background-image: url(../img/bg-back-mobile@2x.jpg);
+    background-position: 0 0;
+  }
 }
 
 .photo-header .page-header__title {
@@ -29,13 +43,6 @@
     padding-bottom: 140px;
   }
 
-  //.main-nav--opened .photo-header__title-wrapper {
-  //  background-image: url(../img/bg-back-tablet@1x.jpg);
-  //  background-position: -271px -111px;
-  //  background-repeat: no-repeat;
-  //  background-color: #1d2631;
-  //  background-size: 182%;
-  //}
   .photo-header .main-nav--closed {
     background-image: url(../img/bg-back-tablet@1x.jpg);
     background-repeat: no-repeat;
@@ -43,11 +50,25 @@
     background-size: auto 166%;
   }
 
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    .photo-header .main-nav--closed {
+      background-image: url(../img/bg-back-tablet@2x.jpg);
+      background-position: 50% 0;
+    }
+  }
+
   .photo-header .main-nav--opened {
     background-image: url(../img/bg-back-tablet@1x.jpg);
     background-repeat: no-repeat;
     background-position: 50% 255px;
     background-size: auto 105%;
+  }
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    .photo-header .main-nav--opened {
+      background-image: url(../img/bg-back-tablet@2x.jpg);
+      background-position: 50% 255px;
+    }
   }
 }
 
@@ -58,6 +79,14 @@
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: auto 217%;
+  }
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    .photo-header .main-nav--closed,
+    .photo-header .main-nav--opened {
+      background-image: url(../img/bg-back-desktop@2x.jpg);
+      background-position: 50% 12px;
+    }
   }
 
   .photo-header .page-header__title {

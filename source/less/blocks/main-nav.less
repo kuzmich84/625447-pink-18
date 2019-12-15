@@ -7,6 +7,13 @@
   background-size: auto, 100% auto;
 }
 
+@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  .main-nav--closed {
+    background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
+    background-size: 258px, 100% auto;
+  }
+}
+
 .main-nav--opened,
 .main-nav--nojs {
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
@@ -14,6 +21,14 @@
   background-position: 0 61.5%, 50% 49%;
   background-color: #1d2631;
   background-size: auto, 100%;
+}
+
+@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  .main-nav--opened,
+  .main-nav--nojs {
+    background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
+    background-size: 258px, 100%;
+  }
 }
 
 .main-nav__list {
@@ -86,6 +101,13 @@
     background-size: auto, auto 100%;
   }
 
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    .main-nav--closed {
+      background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
+      background-size: auto 543px, auto 100%;
+    }
+  }
+
 
   .main-nav--opened,
   .main-nav--nojs {
@@ -94,6 +116,14 @@
     background-position: 50% 100%, 50% 100%;
     background-color: #1d2631;
     background-size: auto, auto 74%;
+  }
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    .main-nav--opened,
+    .main-nav--nojs {
+      background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
+      background-size: auto 543px, auto 74%;
+    }
   }
 
   .main-nav__toggle-icon {
@@ -173,5 +203,13 @@
     background-position: 97% 209px, 50% 0;
     background-color: #1d2631;
     background-size: auto, auto 100%;
+  }
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    .main-nav {
+      background-image: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
+      background-position: 97% 209px, 50% 10px;
+      background-size: auto 644px, auto 100%;
+    }
   }
 }
