@@ -38,6 +38,7 @@
   line-height: 30px;
   .set-font-normal();
   outline: none;
+  height: 63px;
 
   &:hover {
     border-color: #283645;
@@ -47,7 +48,6 @@
   &:focus {
     border-color: #d22856;
   }
-
 }
 
 .form__legend {
@@ -71,7 +71,8 @@
 .form__choose-label {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .form__progress-title,
@@ -82,6 +83,8 @@
   line-height: 30px;
   text-transform: none;
   margin-left: 70px;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 .form__checkbox,
@@ -99,10 +102,10 @@
   height: 35px;
   background-color: @white;
   border: solid 2px #e5e5e5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
+  box-sizing: border-box;
+  max-width: 100%;
+
 
   &:hover {
     border-color: #283645;
@@ -119,11 +122,9 @@
   height: 35px;
   background-color: @white;
   border: solid 2px #e5e5e5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 50%;
   cursor: pointer;
+
 
   &:hover {
     border-color: #283645;
@@ -148,6 +149,11 @@
   height: 15px;
   border-radius: 50%;
   background-color: #d22856;
+  box-sizing: border-box;
+  max-width: 100%;
+  top: 9.5px;
+  left: 50%;
+  margin-left: -7.3px;
 }
 
 .form__progress .form__label {
@@ -349,6 +355,7 @@
 
   .form__input-wrapper--contact {
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .form__fieldset--contact .form__label {
@@ -470,6 +477,7 @@
 
   .form__choose .form__legend {
     margin-bottom: 50px;
+    margin-left: -74px;
   }
 
   .form__fieldset--contact {
@@ -520,7 +528,7 @@
 
   .form-textarea {
     width: 100%;
-    margin-bottom: 57px;
+    margin-bottom: 59px;
   }
 
   .form__textarea {
