@@ -8,6 +8,30 @@ var button = document.querySelector('.popup__button');
 var formButton = document.querySelector('.form__button');
 var buttonFailure = document.querySelector('.popup__button--failure');
 var buttonSuccess = document.querySelector('.popup__button--success');
+var ESC_KEYCODE = 27;
+
+
+var isEscEvent = function (evt, action) {
+  if (evt.keyCode === ESC_KEYCODE) {
+    action();
+  }
+};
+
+var pressEscPopupErrorHandler = function (evt) {
+  isEscEvent(evt, closePopupError);
+};
+
+var pressEscPopupSuccesHandler = function (evt) {
+  isEscEvent(evt, closePopupSuccess);
+};
+
+var closePopupError = function () {
+  popupError.style.display = 'none';
+};
+
+var closePopupSuccess = function () {
+  popupSuccess.style.display = 'none';
+};
 
 var showPopupOfValidity = function (element) {
   if (element.checkValidity() === false) {
@@ -16,15 +40,11 @@ var showPopupOfValidity = function (element) {
     buttonFailure.addEventListener('click', function () {
       popupError.style.display = 'none';
     });
+    document.addEventListener('keydown', pressEscPopupErrorHandler);
   } else {
-    // popupSuccess.style.display = 'block';
     element.removeAttribute('style');
-    // buttonSuccess.addEventListener('click', function () {
-    //   popupSuccess.style.display = 'none';
-    // });
   }
 };
-
 
 var checkElementForm = function (elements) {
   elements.forEach(function (item) {
@@ -34,16 +54,15 @@ var checkElementForm = function (elements) {
   });
 };
 
-
-
-
 form.addEventListener('submit', function (evt) {
-  evt.preventDefault();
-  console.log('Привет');
   popupSuccess.style.display = 'block';
+  buttonSuccess.addEventListener('click', function () {
+    popupSuccess.style.display = 'none';
+  });
+  document.addEventListener('keydown', pressEscPopupSuccesHandler);
+  evt.preventDefault();
 });
 
-formButton.addEventListener('click', function (evt) {
-  evt.preventDefault();
+formButton.addEventListener('click', function () {
   checkElementForm(inputsForm);
 });
