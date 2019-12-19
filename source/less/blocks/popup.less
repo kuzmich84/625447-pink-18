@@ -1,0 +1,146 @@
+.popup {
+  background-color: @white;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  position: fixed;
+  top: 0;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 10000;
+}
+
+.popup__content {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 280px;
+  padding-top: 46px;
+  padding-bottom: 20px;
+}
+
+.popup__title {
+  .set-font-bold();
+  font-size: 18px;
+  line-height: 24px;
+  color: @black;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.popup__text {
+  .set-font-normal();
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 11px;
+}
+
+.popup__button {
+  .set-font-bold();
+  font-size: 18px;
+  line-height: 30px;
+  color: @white;
+  text-transform: uppercase;
+  background-color: #2aab6d;
+  border: 2px solid #2aab6d;
+  margin: 0 auto;
+  min-width: 276px;
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 15px;
+  cursor: pointer;
+}
+
+.popup__button-wrapper {
+  background-color: #f2f2f2;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.popup--success {
+  display: none;
+}
+
+.popup--failure {
+  display: none;
+}
+
+.popup--failure .popup__button-wrapper {
+  background-color: @white;
+  padding-top: 45px;
+}
+
+.popup--failure .popup__content {
+  padding-bottom: 0;
+}
+
+.popup__title br {
+  display: none;
+}
+
+.popup--failure .popup__text {
+  padding-bottom: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .popup {
+    width: 460px;
+    left: 50%;
+    margin-left: -230px;
+    top: 25%;
+  }
+
+  .popup__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .popup__text-mobile {
+    display: none;
+  }
+
+  .popup__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .popup__content {
+    width: 310px;
+  }
+
+  .popup__title br {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .popup {
+    width: 780px;
+    margin-left: -390px;
+  }
+
+  .popup--failure .popup__button-wrapper {
+    background-color: #f2f2f2;
+  }
+
+  .popup__title br {
+    display: none;
+  }
+
+  .popup__content {
+    width: 410px;
+  }
+
+  .popup--failure .popup__content {
+    padding-bottom: 62px;
+  }
+
+  .popup__button {
+    width: 296px;
+  }
+
+  .popup--success .popup__button {
+    width: 456px;
+  }
+}

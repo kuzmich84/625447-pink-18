@@ -1,17 +1,39 @@
 .post-buttons {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  padding-top: 72px;
+  padding-top: 37px;
 }
 
 .post-buttons__button {
   border-color: #d22856;
   color: #d22856;
   margin-bottom: 12px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #d22856;
+    color: @white;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .post-buttons__button--cancel {
   border-color: rgba(40, 54, 69, 0.1);
   color: rgba(40, 54, 69, 0.1);
+
+  &:hover {
+    border-color: rgba(40, 54, 69, 0.3);
+    color: rgba(40, 54, 69, 0.3);
+    background-color: transparent;
+  }
+
+  &:active {
+    background-color: rgba(40, 54, 69, 0.3);
+    border-color: transparent;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {

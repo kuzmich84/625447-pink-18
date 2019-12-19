@@ -4,9 +4,9 @@
   font-size: 18px;
   line-height: 32px;
   text-transform: uppercase;
-  padding-top: 16px;
+  padding-top: 17px;
   display: block;
-  padding-bottom: 16px;
+  padding-bottom: 14px;
 
   &:hover {
     color: @color-hover;
@@ -20,6 +20,7 @@
 .site-list__item {
   text-align: center;
   box-shadow: 0 1px 0 0 #000000, inset 0 2px 0 0 rgba(255, 255, 255, 0.15);
+  margin-bottom: 1px;
 }
 
 @media (min-width: @desktop-width) {
@@ -37,5 +38,24 @@
     font-size: 18px;
     line-height: 18px;
     text-transform: capitalize;
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  .site-list__link--current {
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 99%;
+      height: 2px;
+      background-color: #ffffff;
+      display: block;
+      position: absolute;
+      bottom: 3px;
+      left: 2px;
+    }
   }
 }

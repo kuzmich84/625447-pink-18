@@ -1,5 +1,5 @@
 .price {
-  z-index: 100;
+  z-index: 1;
   background-color: #f2f2f2;
 }
 
@@ -22,6 +22,7 @@
   position: relative;
   border: 2px solid #283645;
   border-right: 2px solid #e5e5e5;
+  width: 276px;
 }
 
 .price__title .price__packet-title:last-child {
@@ -51,8 +52,30 @@
   height: 61px;
 }
 
-.price__packet-title {
-  width: 276px;
+.price__packet-title--hit {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 74px;
+    height: 73px;
+    background-image: url("../img/bg-hit.svg");
+    position: absolute;
+    top: -2px;
+    left: -2px;
+  }
+
+  &::after {
+    content: "ХИТ";
+    color: @white;
+    .set-font-normal();
+    font-size: 14px;
+    line-height: 30px;
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    transform: rotate(-45deg);
+  }
 }
 
 
@@ -89,6 +112,20 @@
   .price__toggles-wrapper {
     display: none;
   }
+
+  .price__packet-title--hit {
+    &::before {
+      width: 61px;
+      height: 61px;
+      background-image: url("../img/bg-hit-tablet.svg");
+      left: -0.5px;
+    }
+
+    &::after {
+      top: 2px;
+      left: 6px;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -100,5 +137,19 @@
 
   .price__content {
     width: 1200px;
+  }
+
+  .price__packet-title--hit {
+    &::before {
+      width: 74px;
+      height: 73px;
+      background-image: url("../img/bg-hit.svg");
+      left: -0.5px;
+    }
+
+    &::after {
+      top: 11px;
+      left: 10px;
+    }
   }
 }
