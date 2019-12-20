@@ -17,6 +17,14 @@
   justify-content: center;
 }
 
+.social__list {
+  .reset-ul();
+  display: flex;
+  margin-top: 9px;
+  margin-left: 11px;
+  margin-bottom: 31px;
+}
+
 
 @media (min-width: @tablet-width) {
   .social__item path {
@@ -34,5 +42,18 @@
       border-color: rgba(40, 54, 69, 0.3);
       opacity: 0.3;
     }
+  }
+
+  .social__list {
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 80px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social__list {
+    margin-right: 211px;
   }
 }
