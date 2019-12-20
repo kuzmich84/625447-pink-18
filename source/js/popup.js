@@ -57,6 +57,7 @@ var checkElementForm = function (elements) {
 form.addEventListener('submit', function (evt) {
   popupSuccess.style.display = 'block';
   buttonSuccess.addEventListener('click', function () {
+    form.reset();
     popupSuccess.style.display = 'none';
   });
   document.addEventListener('keydown', pressEscPopupSuccesHandler);
