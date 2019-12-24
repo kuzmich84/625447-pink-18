@@ -13,7 +13,7 @@ HTML {
   }
 }
 /* Десктоп */
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   HTML {
     /* Десктопный макет */
     background-image: url("img/pink-form-desktop.jpg");
