@@ -11,45 +11,29 @@
 
   .feature__content {
     display: flex;
-    padding-top: 60px;
+    padding-top: 61px;
     padding-left: 20px;
-    padding-bottom: 70px;
+    padding-bottom: 91px;
     width: 660px;
     margin: 0 auto;
-  }
-
-  .feature__image svg {
-    fill: #dedede;
-  }
-
-  .feature__image {
-    margin-right: 71px;
     position: relative;
+    background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-position: 39px 115px, 21px 59px;
+    background-size: 202px 202px, 238px 276px;
 
     &::before {
+      display: block;
       content: "24";
       position: absolute;
-      top: 75px;
-      left: 64px;
+      top: 137px;
+      left: 84px;
       .set-font-bold();
       font-size: 96px;
       line-height: 149.47px;
       color: #d22856;
     }
-
-    &::after {
-      content: "";
-      display: block;
-      width: 173px;
-      height: 173px;
-      border-radius: 50%;
-      border: 15px solid #d22856;
-      position: absolute;
-      top: 54px;
-      left: 18px;
-    }
   }
-
 
   .feature__title {
     .set-font-bold();
@@ -63,6 +47,7 @@
   .feature__text {
     margin-top: 36px;
     margin-right: 25px;
+    margin-left: 309px;
   }
 
   .feature__excerpt {
@@ -79,10 +64,6 @@
     text-decoration: underline;
     cursor: pointer;
   }
-
-  .feature__excerpt-what-br {
-    display: none;
-  }
 }
 
 
@@ -98,52 +79,32 @@
 
   .feature__content {
     padding: 0 5px;
-    padding-bottom: 61px;
+    padding-bottom: 83px;
     width: 940px;
-  }
-
-  .feature__title-br {
-    display: none;
-  }
-
-  .feature__image {
-    margin-right: 66px;
+    background-size: 253px 253px, 298px 345px;
+    background-position: 28px 74px, 6px 5px;
 
     &::before {
-      top: 98px;
-      left: 80px;
+      top: 102px;
+      left: 85px;
       font-size: 120px;
       line-height: 186.84px;
-    }
-
-    &::after {
-      width: 221px;
-      height: 221px;
-      top: 74px;
-      left: 25px;
     }
   }
 
   .feature__excerpt {
     font-size: 18px;
     line-height: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 31px;
   }
 
   .feature__text {
     margin-top: 96px;
+    margin-left: 366px;
   }
 
   .feature__title {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
     padding-right: 0;
-  }
-
-  .feature__excerpt-br {
-    display: none;
-  }
-
-  .feature__excerpt-what-br {
-    display: inline;
   }
 }

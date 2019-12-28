@@ -16,6 +16,13 @@ HTML {
 @media (min-width: 960px) {
   HTML {
     /* Десктопный макет */
+    background-image: url("img/pink-form-desktop(960).jpg");
+  }
+}
+
+@media (min-width: 1200px) {
+  HTML {
+    /* Десктопный макет */
     background-image: url("img/pink-form-desktop.jpg");
   }
 }

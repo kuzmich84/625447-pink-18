@@ -33,6 +33,14 @@
   padding-bottom: 79px;
 }
 
+.photo-header .page-header__back {
+  background-image: none;
+
+  &::after {
+    content: none;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .photo-header .page-header__title {
     font-size: 50px;

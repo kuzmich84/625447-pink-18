@@ -63,7 +63,7 @@
       </ul>
     </div>
     </div>
-    <div class="page-header__title-wrapper photo-header__title-wrapper">
+    <div class="page-header__title-wrapper">
       <h1 class="page-header__title">Фотографии пользователей</h1>
     </div>
   </nav>
@@ -75,7 +75,6 @@
       <p class="photos__subtitle">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает
         ваших?</p>
       <div class="photos__panorama user-photos">
-        <div class="photos__label">Панорама дня</div>
         <a class="user-photos__link" href="#">
           <picture>
             <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.webp 1x,img/panorama-desktop@2x.webp 2x" type="image/webp">
@@ -86,12 +85,10 @@
             <img class="user-photos__image user-photos__image--panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фотография">
           </picture>
         </a>
-        <div class="user-photos__text user-photos__text--panorama">
+        <blockquote class="user-photos__text user-photos__text--panorama">
           <p class="user-photos__nickname">Анна<span class="user-photos__visit-time">(5 МИНУТ НАЗАД)</span></p>
-          <p class="user-photos__desc user-photos__desc--panorama">Прыгать или нет? Напишите в комментарии свой совет
-            и смотрите прямую трансляцию
-            в
-            перископе, задавайте свои вопросы!</p>
+          <p class="user-photos__desc user-photos__desc--panorama">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе,
+            задавайте свои вопросы!</p>
           <p class="user-photos__like user-photos__like--panorama">
             <svg class="user-photos__icon user-photos__icon--panorama" width="13" height="12">
               <use xlink:href="#icon-heart"></use>
@@ -99,7 +96,7 @@
             <span class="user-photos__count-title"><span class="user-photos__count-title">Нравится:</span></span><span
             class="user-photos__count-like">215</span>
           </p>
-        </div>
+        </blockquote>
       </div>
       <ul class="photos__list user-photos">
         <li class="user-photos__item">
@@ -113,7 +110,7 @@
               <img class="user-photos__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фотография">
             </picture>
           </a>
-          <div class="user-photos__text">
+          <blockquote class="user-photos__text">
             <p class="user-photos__nickname">Левон<span class="user-photos__visit-time">(5 ЧАСОВ НАЗАД)</span></p>
             <p class="user-photos__desc">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <p class="user-photos__like">
@@ -122,7 +119,7 @@
               </svg>
               <span class="user-photos__count-title">Нравится:</span><span class="user-photos__count-like">356</span>
             </p>
-          </div>
+          </blockquote>
         </li>
         <li class="user-photos__item">
           <a class="user-photos__link" href="#">
@@ -135,7 +132,7 @@
               <img class="user-photos__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фотография">
             </picture>
           </a>
-          <div class="user-photos__text">
+          <blockquote class="user-photos__text">
             <p class="user-photos__nickname">Антон<span class="user-photos__visit-time">(12 ЧАСОВ НАЗАД)</span></p>
             <p class="user-photos__desc">Соседи будут рады!</p>
             <p class="user-photos__like">
@@ -144,7 +141,7 @@
               </svg>
               <span class="user-photos__count-title">Нравится:</span><span class="user-photos__count-like">666</span>
             </p>
-          </div>
+          </blockquote>
         </li>
         <li class="user-photos__item">
           <a class="user-photos__link" href="#">
@@ -157,7 +154,7 @@
               <img class="user-photos__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фотография">
             </picture>
           </a>
-          <div class="user-photos__text">
+          <blockquote class="user-photos__text">
             <p class="user-photos__nickname">Борис<span class="user-photos__visit-time">(20 ЧАСОВ НАЗАД)</span></p>
             <p class="user-photos__desc">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <p class="user-photos__like">
@@ -166,7 +163,7 @@
               </svg>
               <span class="user-photos__count-title">Нравится:</span><span class="user-photos__count-like">215</span>
             </p>
-          </div>
+          </blockquote>
         </li>
         <li class="user-photos__item">
           <a class="user-photos__link" href="#">
@@ -179,7 +176,7 @@
               <img class="user-photos__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фотография">
             </picture>
           </a>
-          <div class="user-photos__text">
+          <blockquote class="user-photos__text">
             <p class="user-photos__nickname">Сергей<span class="user-photos__visit-time">(25 ЧАСОВ НАЗАД)</span></p>
             <p class="user-photos__desc">Самая кубанская в мире!</p>
             <p class="user-photos__like">
@@ -188,7 +185,7 @@
               </svg>
               <span class="user-photos__count-title">Нравится:</span><span class="user-photos__count-like">4</span>
             </p>
-          </div>
+          </blockquote>
         </li>
         <li class="user-photos__item">
           <a class="user-photos__link" href="#">
@@ -201,7 +198,7 @@
               <img class="user-photos__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фотография">
             </picture>
           </a>
-          <div class="user-photos__text">
+          <blockquote class="user-photos__text">
             <p class="user-photos__nickname">Максим<span class="user-photos__visit-time">(40 ЧАСОВ НАЗАД)</span></p>
             <p class="user-photos__desc">Где снег-то?</p>
             <p class="user-photos__like">
@@ -210,7 +207,7 @@
               </svg>
               <span class="user-photos__count-title">Нравится:</span><span class="user-photos__count-like">150</span>
             </p>
-          </div>
+          </blockquote>
         </li>
         <li class="user-photos__item">
           <a class="user-photos__link" href="#">
@@ -223,7 +220,7 @@
               <img class="user-photos__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фотография">
             </picture>
           </a>
-          <div class="user-photos__text">
+          <blockquote class="user-photos__text">
             <p class="user-photos__nickname">Надежда<span class="user-photos__visit-time">(45 ЧАСОВ НАЗАД)</span></p>
             <p class="user-photos__desc">Всем GM и взаимные лайки!</p>
             <p class="user-photos__like">
@@ -232,7 +229,7 @@
               </svg>
               <span class="user-photos__count-title">Нравится:</span><span class="user-photos__count-like">2560</span>
             </p>
-          </div>
+          </blockquote>
         </li>
       </ul>
       <p class="photos__slogan">Затмите их всех! </p>
@@ -321,6 +318,6 @@
     </div>
   </div>
 </footer>
-<script src="js/menu.min.js" ></script>
+<script src="js/menu.min.js"></script>
 </body>
 </html>

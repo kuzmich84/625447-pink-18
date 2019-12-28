@@ -9,6 +9,39 @@
   text-align: center;
 }
 
+.system-list__item {
+  align-items: center;
+  justify-content: center;
+}
+
+.system-list__link {
+  width: 47px;
+  min-height: 60px;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.system-list__link--apple {
+  background-image: url("../img/logo-apple.svg");
+  background-size: 47px 56px;
+  background-position: 0 1px;
+}
+
+.system-list__link--google {
+  background-image: url("../img/logo-android.svg");
+  background-size: 43px 47px;
+  background-position: 0 10px;
+}
+
+.system-list__link--microsoft {
+  background-image: url("../img/logo-microsoft.svg");
+  background-size: 44px 41px;
+  background-position: 0 14px;
+}
+
+
 @media (min-width: @tablet-width) {
   .system-list {
     padding: 0 28px;
