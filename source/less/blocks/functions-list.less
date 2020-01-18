@@ -44,14 +44,25 @@
   .functions-list__item {
     width: 310px;
     text-align: center;
-    margin-right: 10px;
+  }
+
+  .functions-list__item:first-child {
+    margin-left: -5px;
+  }
+
+  .functions-list__item:last-child .functions-list__content {
+    padding-right: 26px;
+  }
+
+  .functions-list__item:last-child .functions-list__title {
+    padding-right: 33px;
   }
 
   .functions-list__content {
     text-align: center;
     font-size: 18px;
     line-height: 30px;
-    padding: 0 30px;
+    padding: 0 35px;
   }
 
   .functions-list__title {
@@ -63,7 +74,8 @@
   }
 
   .functions-list {
-    width: 935px;
-    margin-top: 58px;
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
   }
 }

@@ -51,6 +51,11 @@
   }
 }
 
+.photos__content {
+  -ms-overflow-style: none;
+  overflow: auto;
+}
+
 @media (min-width: @tablet-width) {
   .photos__list {
     flex-direction: row;
@@ -63,7 +68,9 @@
   .photos__subtitle {
     font-size: 18px;
     line-height: 30px;
-    width: 640px;
+    width: 550px;
+    padding-top: 88px;
+    padding-bottom: 76px;
   }
 
   .photos__content {
@@ -86,7 +93,7 @@
 
 @media (min-width: @desktop-width) {
   .photos__subtitle {
-    padding: 66px 0 89px;
+    padding: 93px 0 89px;
     width: 600px;
   }
 
