@@ -73,6 +73,8 @@
 
 .user-photos__item {
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .user-photos__text--panorama {
@@ -88,16 +90,16 @@
 
   .user-photos__item {
     width: 300px;
-    height: 455px;
   }
 
   .user-photos__text {
     width: 246px;
-    height: 110px;
     padding: 0 27px;
     padding-top: 24px;
     padding-bottom: 21px;
     margin-left: 0;
+    flex-grow: 1;
+    min-height: 111px;
   }
 
   .user-photos__like {
@@ -120,8 +122,9 @@
   }
 
   .user-photos__desc {
-    margin-bottom: 0;
-    height: 50px;
+    overflow: visible;
+    margin-bottom: 14px;
+    max-height: 10000000px;
   }
 
   .user-photos__desc--panorama {
@@ -137,7 +140,7 @@
     width: 566px;
     padding-top: 24px;
     position: relative;
-    height: 78px;
+    min-height: 78px;
     padding-bottom: 18px;
     margin-left: auto;
     margin-right: auto;
@@ -164,12 +167,11 @@
     margin-left: auto;
     margin-right: auto;
     width: 886px;
-    height: 53px;
+    min-height: 53px;
     padding-bottom: 18px;
   }
 
   .user-photos__item {
-    height: 555px;
     margin-bottom: 54px;
   }
 
